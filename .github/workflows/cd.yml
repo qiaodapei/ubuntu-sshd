@@ -42,8 +42,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            aoudiamoncef/ubuntu-sshd
-            ghcr.io/${{ github.repository }}/ubuntu-sshd
+            qiaodapei/ubuntu-sshd
 
       - name: Build and push to Docker Hub and GitHub Container Registry
         id: build
@@ -53,8 +52,7 @@ jobs:
           sbom: true
           push: true
           tags: |
-            aoudiamoncef/ubuntu-sshd:latest
-            ghcr.io/${{ github.repository }}/ubuntu-sshd:latest
+            qiaodapei/ubuntu-sshd:latest
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Generate artifact attestation
