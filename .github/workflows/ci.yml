@@ -35,5 +35,5 @@ jobs:
         with:
           context: .
           push: false
-          tags: aoudiamoncef/ubuntu-sshd:pr-${{ github.event.number }}
+          tags: qiaodapei/ubuntu-sshd:pr-${{ github.event.number }}
           labels: ${{ steps.meta.outputs.labels }}
