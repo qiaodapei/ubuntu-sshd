@@ -27,7 +27,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            aoudiamoncef/ubuntu-sshd
+            qiaodapei/ubuntu-sshd
             ghcr.io/${{ github.repository }}/ubuntu-sshd
 
       - name: Build Docker image
